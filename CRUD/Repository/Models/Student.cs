@@ -1,4 +1,4 @@
-﻿namespace CRUD.Models
+﻿namespace CRUD.Repository.Models
 {
     public class Student
     {

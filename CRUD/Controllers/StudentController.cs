@@ -1,5 +1,5 @@
-using CRUD.Models;
 using CRUD.Repository;
+using CRUD.Repository.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

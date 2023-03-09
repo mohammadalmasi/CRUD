@@ -1,4 +1,4 @@
-﻿using CRUD.Models;
+﻿using CRUD.Repository.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CRUD.Repository
