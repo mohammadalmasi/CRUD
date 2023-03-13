@@ -44,7 +44,17 @@ namespace CRUD.Controllers
         {
             _dbContext.Students.Update(student);
             await _dbContext.SaveChangesAsync();
-            return NoContent();
+            return Ok();
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAsync(int id)
+        {
+            var student = new Student() { Id = id };
+            _dbContext.Students.Attach(student);
+            _dbContext.Students.Remove(student);
+            await _dbContext.SaveChangesAsync();
+            return Ok();
         }
 
     }
